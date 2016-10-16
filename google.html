@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Google style</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/google.css" />
+	<script src="js/pace.min.js"></script>
+<style>
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body,html{
+background:#fff;
+color:#fff;
+font-size:62.5%;
+
+}
+
+
+#loading{
+width:279px;
+position: absolute;
+font-family:arial,sans-serif;
+color:#000;
+top: 40%;
+left: 50%;
+transform: translate3d(-50%, -50%, 0);
+font-size:2rem;
+transition: all 1s;
+}
+.loading:after{
+content:'.';
+animation: blinking 2s linear infinite;
+}
+@keyframes blinking{
+
+50% {content:'..';}
+100% {content:'...';}
+}
+
+.fix{
+background:#fff;
+  position: absolute;
+  width:12px;
+  height:50px;
+  z-index:-1;
+  top:calc(50% - 25px);
+  left:calc(50% - 235px);
+}
+
+#hideden{
+display:none;
+}
+</style>
+ 
+  </head>
+  <body>
+  <div class='fix'></div>
+<div id='loading'>
+Loading 222byt@gmail.com
+</div>
+
+<div class="slideshow" id='hidden'>
+	<div class="slideshow-image" style="background-image: url('img/1.jpg')"></div>
+	<div class="slideshow-image" style="background-image: url('img/2.jpg')"></div>
+	<div class="slideshow-image" style="background-image: url('img/3.jpg')"></div>
+	<div class="slideshow-image" style="background-image: url('img/4.jpg')"></div>
+</div>
+
+
+<script>
+Pace.on('done', function() {
+ var link = document.createElement("link");
+ link.rel = "stylesheet";
+ link.type = "text/css";
+ link.href = 'css/slideshow.css';
+ setTimeout(function(){
+ document.getElementsByTagName("head")[0].appendChild(link);
+ document.getElementById("hidden").style.display='inline';
+ document.getElementsByTagName('div')[0].style.display='none';
+ document.getElementById("loading").style.display='none';
+ },2000)
+  document.getElementById("loading").innerText = 'Load finished'
+document.getElementById("loading").style.opacity='0';
+});
+</script>
+  </body>
+</html>
