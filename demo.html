@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gitter – Not Found</title>
+    <title>pure loading bar, no slideshow</title>
     <meta charset="utf-8">
-	<link rel="stylesheet" href="google.css" />
-	<script src="pace.min.js"></script>
+	<link rel="stylesheet" href="css/google.css" />
+	<script src="js/pace.min.js"></script>
 <style>
 
 * {
@@ -36,14 +36,24 @@ animation: blinking 2s linear infinite;
 }
 
 @keyframes blinking{
-
 50% {content:'..';}
 100% {content:'...';}
+}
+
+.fix{
+background:#fff;
+  position: absolute;
+width:230px;
+  height:50px;
+  z-index:-1;
+  top:calc(50% - 25px);
+  left:calc(50% - 465px);
 }
 </style>
  
   </head>
   <body>
+  <div class='fix'></div>
 <div class='loading'>
 Loading 222byt@gmail.com
 </div>
