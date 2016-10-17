@@ -8,6 +8,8 @@ it is a star wars theme for [pace.js](https://github.com/HubSpot/PACE/).
 
 I planned to make a lightsaber loading bar for my site. Searched on Google and found it had an easter egg for **Star Wars : The Force Awakens** in 2015. I found some picture of how it looks like. And I didn't find any already-done code for it. So I make this.
 
+![demo](https://raw.githubusercontent.com/HTML50/starwars-loading-style-for-pace/master/img/loading.gif)
+
 
 
 # Demo
