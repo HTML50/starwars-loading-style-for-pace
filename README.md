@@ -12,10 +12,6 @@ I planned to make a lightsaber loading bar for my site. Searched on Google and f
 
 
 
-![demo](https://raw.githubusercontent.com/HTML50/starwars-loading-style-for-pace/master/img/loading.gif)
-
-
-
 # Demo
 
 I put some photo in it, so that you can watch the loading effect with enough time.
@@ -36,7 +32,7 @@ here is a demo that with no photo, only loading bar.
 2. download my style sheet file (Vader/Obi/Google)
 3. include them in your HTML.
 
-```
+```html
 <head>
   <script src="pace.js"></script>
   <link href="lasersaber.css" rel="stylesheet" />
