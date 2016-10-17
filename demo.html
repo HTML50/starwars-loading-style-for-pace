@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>pure loading bar, no slideshow</title>
-    <meta charset="utf-8">
-	<link rel="stylesheet" href="css/google.css" />
-	<script src="js/pace.min.js"></script>
+<head>
+<title>pure loading bar, no slideshow</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/lasersaber.css"/>
+<link rel="stylesheet" href="css/demo.css"/>
+<script src="js/pace.min.js"></script>
 <style>
-
 * {
 	margin: 0;
 	padding: 0;
 }
 
-
-body,html{
-background:#fff;
-color:#fff;
-font-size:62.5%;
+body,html {
+	background: #fff;
+	color: #fff;
+	font-size: 62.5%;
 }
 
-
-.loading{
-width:279px;
-position: absolute;
-font-family:arial,sans-serif;
-color:#000;
-top: 40%;
-left: 50%;
-transform: translate3d(-50%, -50%, 0);
-font-size:2rem;
-}
-.loading:after{
-content:'.';
-animation: blinking 2s linear infinite;
+.loading {
+	width: 279px;
+	position: absolute;
+	font-family: arial,sans-serif;
+	color: #000;
+	top: 40%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	font-size: 2rem;
 }
 
-@keyframes blinking{
-50% {content:'..';}
-100% {content:'...';}
+.loading:after {
+	content: '.';
+	animation: blinking 2s linear infinite;
 }
 
-.fix{
-background:#fff;
-  position: absolute;
-width:230px;
-  height:50px;
-  z-index:-1;
-  top:calc(50% - 25px);
-  left:calc(50% - 465px);
+@keyframes blinking {
+	50% {
+		content: '..';
+	}
+
+	100% {
+		content: '...';
+	}
+}
+
+.fix {
+	background: #fff;
+	position: absolute;
+	width: 230px;
+	height: 50px;
+	z-index: -1;
+	top: calc(50% - 25px);
+	left: calc(50% - 465px);
 }
 </style>
- 
-  </head>
-  <body>
-  <div class='fix'></div>
+</head>
+<body>
+<div class='fix'>
+</div>
 <div class='loading'>
 Loading 222byt@gmail.com
 </div>
-  </body>
+</body>
 </html>

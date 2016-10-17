@@ -11,9 +11,7 @@
 }
 
 .pace-inactive {
-  opacity:0;
-visibility: hidden;
-  transition:all 1s ;
+ display:block;
 }
 
 .pace .pace-progress {
