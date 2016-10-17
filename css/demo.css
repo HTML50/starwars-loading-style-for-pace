@@ -1,0 +1,17 @@
+.pace .pace-progress {
+
+  box-shadow: 5px 0 15px 0px #e51115;
+  background:linear-gradient(to bottom, rgba(229,17,21,1) 0%,rgba(254,254,254,1) 30%,rgba(254,254,254,1) 47%,rgba(254,254,254,1) 71%,rgba(229,17,21,1) 100%);
+  border-radius: 0px 20px 20px 30px;
+  background-color: rgba(0, 0, 0, 0.19999999999999996);  
+  animation: vader 2s infinite;
+}
+
+
+
+
+@keyframes vader {
+	from { box-shadow: 5px 0 10px #e51115; }
+	50% { box-shadow: 5px 0 15px #e51115; }
+	to { box-shadow: 5px 0 10px #e51115; }
+}
