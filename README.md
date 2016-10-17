@@ -10,6 +10,10 @@ I planned to make a lightsaber loading bar for my site. Searched on Google and f
 
 
 
+![demo](https://raw.githubusercontent.com/HTML50/starwars-loading-style-for-pace/master/img/loading.gif)
+
+
+
 # Demo
 
 I put some photo in it, so that you can watch the loading effect with enough time.
