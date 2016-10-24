@@ -22,9 +22,8 @@
   right: 100%;
   left:calc(50% - 465px);
   width: 335px;
-z-index:-2;
+z-index:-1;
 height:11px;
-
 }
 
 .pace .pace-activity {
